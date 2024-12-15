@@ -3,7 +3,7 @@ import sublime, sublime_plugin, re, os, subprocess, urllib.request, urllib.parse
 
 class CombinerCommand(sublime_plugin.TextCommand):
     def run(self, edit):
-		
+        
         # ---
         # definimos variables iniciales
         # ---
@@ -147,13 +147,13 @@ class MinifyCommand(sublime_plugin.TextCommand):
         
         # if extension == "js":
         if extension == "js":
-            url = 'https://www.toptal.com/developers/javascript-minifier/raw'
+            url = 'https://www.toptal.com/developers/javascript-minifier/api/raw'
         elif extension == "css":
-            url = 'https://www.toptal.com/developers/cssminifier/raw'
+            url = 'https://www.toptal.com/developers/cssminifier/api/raw'
         elif extension == "html":
-            url = 'https://www.toptal.com/developers/html-minifier/raw'
+            url = 'https://www.toptal.com/developers/html-minifier/api/raw'
         elif extension == "htm":
-            url = 'https://www.toptal.com/developers/html-minifier/raw'
+            url = 'https://www.toptal.com/developers/html-minifier/api/raw'
         else:
             print ("no compatible file")
 
